@@ -3,12 +3,21 @@
     padding: 0;
 }
 
+html {
+    height: 100%;
+}
+
 body {
     font-family: "Reddit Mono", monospace;
     font-optical-sizing: auto;
-    font-weight: 400; /* 200-900 */
+    font-weight: 500; /* 200-900 */
     font-style: normal;
     font-size: 16px;
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
     color: #161418;
 }
 
@@ -30,6 +39,7 @@ body {
     padding: 20px;
     list-style: none;
     justify-content: center;
+    align-items: center;
 }
 
 .blankspace {
@@ -40,9 +50,11 @@ body {
 .item-logo {
     height: 30px;
     width: auto;
+    filter: invert(4%) sepia(4%) saturate(2855%) hue-rotate(227deg) brightness(95%) contrast(91%);
 }
 
 .item-label {
+    margin-top: 2px;
     font-size: 12px;
     text-transform: uppercase;    
 }
@@ -54,4 +66,51 @@ body {
 
 .item:hover > .item-logo {
     filter: invert(87%) sepia(8%) saturate(67%) hue-rotate(227deg) brightness(106%) contrast(89%);
+}
+
+main {
+    display: flex;
+    flex-wrap: column wrap;
+}
+
+.sidebar {
+    flex: 1 1 20%;
+    background-color: #e5e3e7;
+}
+
+.content {
+    flex: 1 1 80%;
+    background-color: #e5e3e7;
+}
+
+article {
+    border: 2px solid black;
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 20px 10px;
+    padding: 20px;
+    gap: 10px;
+}
+
+article > .title {
+    font-size: 2em;
+}
+
+article > .date {
+
+}
+
+article > .preview-text {
+
+}
+
+article:hover {
+    background-color: gray;
+    color: #e5e3e7;
+}
+
+@media screen and (max-aspect-ratio: 1/1) {
+    .sidebar {
+        display: none;
+    }
 }
