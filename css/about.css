@@ -1,0 +1,8 @@
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+.paragraphs {
+    margin-bottom: 30px;
+}

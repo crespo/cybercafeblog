@@ -14,6 +14,7 @@ body {
     font-style: normal;
     font-size: 16px;
     height: 100%;
+    background-color: #e5e3e7;
 }
 
 a {
@@ -75,21 +76,21 @@ main {
 
 .sidebar {
     flex: 1 1 20%;
-    background-color: #e5e3e7;
 }
 
 .content {
     flex: 1 1 80%;
-    background-color: #e5e3e7;
 }
 
 article {
-    border: 2px solid black;
+    border: 2px solid #161418;
     display: flex;
     flex-flow: column nowrap;
     margin: 20px 10px;
     padding: 20px;
     gap: 10px;
+    max-height: 150px;
+    min-height: 150px;
 }
 
 article > .title {
@@ -97,16 +98,31 @@ article > .title {
 }
 
 article > .date {
-
+    font-size: 0.8em;
 }
 
 article > .preview-text {
-
+    font-size: 1em;
 }
 
 article:hover {
     background-color: gray;
     color: #e5e3e7;
+}
+
+.emphasis-link {
+    color: rgb(158, 104, 4);
+}
+
+article:hover > .preview-text > .emphasis-link {
+    color: rgb(238, 190, 100);
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    font-size: 0.9em;
 }
 
 @media screen and (max-aspect-ratio: 1/1) {
