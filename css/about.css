@@ -7,6 +7,14 @@ h1, h2 {
     
 }
 
+.heading__dark-mode {
+    color: #e5e3e7;
+}
+
 .paragraphs {
     margin-bottom: 30px;
+}
+
+.paragraphs__dark-mode {
+    color: #e5e3e7;
 }

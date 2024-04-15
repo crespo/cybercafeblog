@@ -10,24 +10,28 @@
     <link href="https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="./imgs/coffee.svg">
 </head>
-<body>
+<body onload="toggleMode(false)">
     <script src="./js/script.js"></script>
     <header>
         <nav class="navbar">
-            <div class="menu">
-                <span class="blankspace"></span>
+            <div id="menu" class="menu">
+                <span id="blankspace" class="blankspace"></span>
                 <a href="./index.html" class="item brand">
                     <span>&ltcybercaféblog&frasl;&gt</span>
                 </a>
-                <a href="./index.html" class="item">
-                    <img src="./imgs/home.svg" alt="" class="item-logo">
+                <a id="item" href="./index.html" class="item">
+                    <img src="./imgs/home.svg" alt="" id="item-logo" class="item-logo">
                     <span class="item-label">home</span>
                 </a>
-                <a href="./about.html" class="item">
-                    <img src="./imgs/about.svg" alt="" class="item-logo">
+                <a id="item" href="./about.html" class="item">
+                    <img src="./imgs/about.svg" alt="" id="item-logo" class="item-logo">
                     <span class="item-label">about</span>
                 </a>
-                <span class="blankspace"></span>
+                <a id="item" href="#" class="item" onclick="toggleMode(true)">
+                    <img src="./imgs/dark_mode.svg" alt="" id="item-logo" class="item-logo">
+                    <span class="item-label">dark</span>
+                </a>
+                <span id="blankspace" class="blankspace"></span>
             </div>
         </nav>
     </header>
@@ -35,27 +39,62 @@
     <main>
         <span class="sidebar"></span>
         <div class="content">
-            <article>
+            <article class="article">
                 <div class="title"><a href="#">Why should we build more cybercafés?</a></div>
                 <div class="date">21 February 2024, 16:20 h</div>
                 <div class="preview-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates perspiciatis doloremque enim beatae maxime dicta explicabo atque, inventore fuga voluptatibus. Mollitia nemo porro est qui earum, similique vitae ab facere.</div>
             </article>
-            <article>
+            <article class="article">
                 <div class="title"><a href="#">Why should we build more cybercafés?</a></div>
                 <div class="date">21 February 2024, 16:20 h</div>
                 <div class="preview-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates perspiciatis doloremque enim beatae maxime dicta explicabo atque, inventore fuga voluptatibus. Mollitia nemo porro est qui earum, similique vitae ab facere.</div>
             </article>
-            <article>
+            <article class="article">
                 <div class="title"><a href="#">Why should we build more cybercafés?</a></div>
                 <div class="date">21 February 2024, 16:20 h</div>
                 <div class="preview-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates perspiciatis doloremque enim beatae maxime dicta explicabo atque, inventore fuga voluptatibus. Mollitia nemo porro est qui earum, similique vitae ab facere.</div>
             </article>
-            <article>
+            <article class="article">
                 <div class="title"><a href="#">Why should we build more cybercafés?</a></div>
                 <div class="date">21 February 2024, 16:20 h</div>
                 <div class="preview-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates perspiciatis doloremque enim beatae maxime dicta explicabo atque, inventore fuga voluptatibus. Mollitia nemo porro est qui earum, similique vitae ab facere.</div>
             </article>
-            <article>
+            <article class="article">
+                <div class="title"><a href="#">Why should we build more cybercafés?</a></div>
+                <div class="date">21 February 2024, 16:20 h</div>
+                <div class="preview-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates perspiciatis doloremque enim beatae maxime dicta explicabo atque, inventore fuga voluptatibus. Mollitia nemo porro est qui earum, similique vitae ab facere.</div>
+            </article>
+            <article class="article">
+                <div class="title"><a href="#">Why should we build more cybercafés?</a></div>
+                <div class="date">21 February 2024, 16:20 h</div>
+                <div class="preview-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates perspiciatis doloremque enim beatae maxime dicta explicabo atque, inventore fuga voluptatibus. Mollitia nemo porro est qui earum, similique vitae ab facere.</div>
+            </article>
+            <article class="article">
+                <div class="title"><a href="#">Why should we build more cybercafés?</a></div>
+                <div class="date">21 February 2024, 16:20 h</div>
+                <div class="preview-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates perspiciatis doloremque enim beatae maxime dicta explicabo atque, inventore fuga voluptatibus. Mollitia nemo porro est qui earum, similique vitae ab facere.</div>
+            </article>
+            <article class="article">
+                <div class="title"><a href="#">Why should we build more cybercafés?</a></div>
+                <div class="date">21 February 2024, 16:20 h</div>
+                <div class="preview-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates perspiciatis doloremque enim beatae maxime dicta explicabo atque, inventore fuga voluptatibus. Mollitia nemo porro est qui earum, similique vitae ab facere.</div>
+            </article>
+            <article class="article">
+                <div class="title"><a href="#">Why should we build more cybercafés?</a></div>
+                <div class="date">21 February 2024, 16:20 h</div>
+                <div class="preview-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates perspiciatis doloremque enim beatae maxime dicta explicabo atque, inventore fuga voluptatibus. Mollitia nemo porro est qui earum, similique vitae ab facere.</div>
+            </article>
+            <article class="article">
+                <div class="title"><a href="#">Why should we build more cybercafés?</a></div>
+                <div class="date">21 February 2024, 16:20 h</div>
+                <div class="preview-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates perspiciatis doloremque enim beatae maxime dicta explicabo atque, inventore fuga voluptatibus. Mollitia nemo porro est qui earum, similique vitae ab facere.</div>
+            </article>
+            <article class="article">
+                <div class="title"><a href="#">Why should we build more cybercafés?</a></div>
+                <div class="date">21 February 2024, 16:20 h</div>
+                <div class="preview-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates perspiciatis doloremque enim beatae maxime dicta explicabo atque, inventore fuga voluptatibus. Mollitia nemo porro est qui earum, similique vitae ab facere.</div>
+            </article>
+            <article class="article">
                 <div class="title"><a href="#">Why should we build more cybercafés?</a></div>
                 <div class="date">21 February 2024, 16:20 h</div>
                 <div class="preview-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates perspiciatis doloremque enim beatae maxime dicta explicabo atque, inventore fuga voluptatibus. Mollitia nemo porro est qui earum, similique vitae ab facere.</div>
@@ -64,7 +103,7 @@
         <span class="sidebar"></span>
     </main>
 
-    <footer>
+    <footer class="footer">
         <p>Made with ☕ by <a href="http://github.com/crespo" class="emphasis-link">Raul Crespo</a></p>
     </footer>
 
