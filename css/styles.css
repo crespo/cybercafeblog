@@ -84,6 +84,7 @@ main {
 
 article {
     border: 2px solid #161418;
+    border-radius: 12px;
     display: flex;
     flex-flow: column nowrap;
     margin: 20px 10px;
@@ -110,14 +111,6 @@ article > .preview-text { /* TODO: FIX ELLIPSIS TEXT-OVERFLOW */
 article:hover {
     background-color: gray;
     color: #e5e3e7;
-}
-
-.emphasis-link {
-    color: rgb(158, 104, 4);
-}
-
-article:hover > .preview-text > .emphasis-link {
-    color: rgb(238, 190, 100);
 }
 
 footer {
